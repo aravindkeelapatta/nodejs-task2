@@ -4,6 +4,11 @@ var app = express();
 
 var router = express.Router();
 
+var importData = require("./import")
+
+
+console.log(importData)	
+
 app.use("/api", router)
 
 router.get("/employee", function(request, response) {
